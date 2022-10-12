@@ -1,0 +1,6 @@
+import pandas as pd
+
+df = pd.read_csv("telecom_churn.csv")
+new_df = df.loc[4:9, ["State", "Account length", "Area code", "International plan"]]
+print(new_df.iloc[:5])
+print(new_df.loc[:5])
