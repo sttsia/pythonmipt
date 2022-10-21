@@ -1,0 +1,10 @@
+import numpy as np
+plt.ylim(min_y, max_y)
+    plt.xlim(min_x, max_x)
+    plt.grid('True')
+    plt.yscale('log')
+    x = np.linspace(min_x, max_x, N)
+    y = f(x)
+    plt.plot(x, y, 'g-.')
+    plt.show()
+    plt.savefig("function.png")
